@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.example.com/hospital hospital.xsd"
+          xmlns="http://www.example.com/hospital"
+          nombre="Vegas">
+    <profesionales>
+        <auxiliares>
+            <auxiliar id="1"/>
+        </auxiliares>
+        <cirujanos>
+            <cirujano>
+                <id>1</id>
+                <nombre></nombre>
+                <apellidos></apellidos>
+                <seccion></seccion>
+            </cirujano>
+        </cirujanos>
+        <enfermeros>
+            <enfermero id="1">
+                <nombre></nombre>
+                <apellidos></apellidos>
+                <seccion></seccion>
+            </enfermero>
+        </enfermeros>
+        <doctores>
+            <doctor especialidad="cardio">
+                <id>1</id>
+                <nombre></nombre>
+                <apellidos></apellidos>
+                <seccion></seccion>
+            </doctor>
+        </doctores>
+    </profesionales>
+    <pacientes>
+        <paciente DNI="12345">
+            <fichaMedica></fichaMedica>
+            <nombre></nombre>
+        </paciente>
+    </pacientes>
+</hospital>
