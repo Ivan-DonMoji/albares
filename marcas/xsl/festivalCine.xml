@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<festivalCine>
+    <pelicula id="1">
+        <titulo>El Amanecer</titulo>
+        <director>Ana Martínez</director>
+        <genero>Drama</genero>
+        <duracion>120</duracion>
+        <actores>
+            <actor>Juan Pérez</actor>
+            <actor>Lucía Gómez</actor>
+        </actores>
+        <premios>
+            <premio>Mejor Guion</premio>
+        </premios>
+    </pelicula>
+    <pelicula id="2">
+        <titulo>La Carrera</titulo>
+        <director>Ricardo Sánchez</director>
+        <genero>Acción</genero>
+        <duracion>95</duracion>
+        <actores>
+            <actor>Pedro López</actor>
+            <actor>Carmen Ruiz</actor>
+            <actor>Diego Fernández</actor>
+        </actores>
+    </pelicula>
+    <pelicula id="3">
+        <titulo>Noche Estrellada</titulo>
+        <director>Isabel Torres</director>
+        <genero>Romance</genero>
+        <duracion>110</duracion>
+        <actores>
+            <actor>María García</actor>
+            <actor>José Ramírez</actor>
+        </actores>
+        <premios>
+            <premio>Mejor Fotografía</premio>
+            <premio>Mejor Música</premio>
+        </premios>
+    </pelicula>
+    <pelicula id="4">
+        <titulo>El Misterio</titulo>
+        <director>Fernando Díaz</director>
+        <genero>Misterio</genero>
+        <duracion>100</duracion>
+        <actores>
+            <actor>Laura Navarro</actor>
+        </actores>
+    </pelicula>
+    <pelicula id="5">
+        <titulo>Risas Inolvidables</titulo>
+        <director>Juan López</director>
+        <genero>Comedia</genero>
+        <duracion>105</duracion>
+        <actores>
+            <actor>Daniela Vega</actor>
+            <actor>Marcelo Ríos</actor>
+        </actores>
+        <premios>
+            <premio>Mejor Actor</premio>
+        </premios>
+    </pelicula>
+    <pelicula id="6">
+        <titulo>La Venganza</titulo>
+        <director>Claudia Romero</director>
+        <genero>Acción</genero>
+        <duracion>130</duracion>
+        <actores>
+            <actor>Sergio Morales</actor>
+            <actor>Ana Belén</actor>
+        </actores>
+        <premios>
+            <premio>Mejor Dirección</premio>
+        </premios>
+    </pelicula>
+</festivalCine>

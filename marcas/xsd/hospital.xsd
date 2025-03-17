@@ -16,6 +16,7 @@
             <xs:element name="nombre" type="xs:string" />
             <xs:element name="apellidos" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
         </xs:sequence>
+        <xs:attribute name="DNI" type="DNIType"></xs:attribute>
     </xs:complexType>
 
     <!-- Tipo para profesionales, hijo de PersonaType -->
@@ -37,11 +38,11 @@
                 <xs:sequence>
                     <xs:element name="fichaMedica" type="xs:string" />
                 </xs:sequence>
-                <xs:attribute name="DNI" type="DNIType" use="required" />
+                
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
+     
     <xs:complexType name="AuxiliarType">
         <xs:complexContent>
             <xs:extension base="ProfesionalType" />
@@ -120,6 +121,11 @@
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
+                    <xs:unique name="SeguridadSocialProfesional">
+                        <xs:selector xpath="auxiliares"></xs:selector>
+                        <xs:selector xpath="doctores"></xs:selector>
+                        <xs:field xpath="@id"></xs:field>
+                    </xs:unique>
                 </xs:element>
                 <!-- Grupo de pacientes -->
                 <xs:element name="pacientes">
@@ -127,9 +133,14 @@
                         <xs:sequence>
                             <!-- Uno o más pacientes -->
                             <xs:element name="paciente" type="PacienteType" minOccurs="1"
-                                maxOccurs="unbounded" />
+                                maxOccurs="unbounded">
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
+                    <xs:key name="DNIPaciente">
+                        <xs:selector xpath="./PacienteType"></xs:selector>
+                        <xs:field xpath="@DNI"></xs:field>
+                    </xs:key>    
                 </xs:element>
             </xs:sequence>
             <!-- Atributo obligatorio del hospital -->
