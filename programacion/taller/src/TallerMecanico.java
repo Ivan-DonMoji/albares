@@ -1,5 +1,9 @@
 package programacion.taller.src;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -15,6 +19,7 @@ public class TallerMecanico {
         // AQUI AÑADID LOS VEHICULOS QUE QUERÁIS PARA IR PROBANDO, AHORA MISMO ES NORMAL
         // QUE SALGAN LOS WARNING.
         // EN LA SIGUIENTE CLASE LO VEREMOS CON MÁS PROFUNDIDAD
+        escribirDat(aceptado);
         int opcion = 0;
         Scanner scan = new Scanner(System.in);
         do {
@@ -78,6 +83,17 @@ public class TallerMecanico {
         }
     }
 
+    public static void escribirDat(Vehiculo aceptado){
+        String filename = "ejemplo.dat";
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename));
+            oos.writeObject(aceptado);
+            oos.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
     public static void clearScreen() {
         try {
             Thread.sleep(1500);

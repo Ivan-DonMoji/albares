@@ -1,0 +1,101 @@
+/* Estilos para la Pokédex Roja */
+body {
+    background: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .pokedex {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border: 5px solid #d32f2f;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  header .top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #d32f2f;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  #table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #d32f2f;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #ffe5e5;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    border: 2px solid #d32f2f;
+  }
+  
+  #pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    background-color: #fff;
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+    padding: 8px 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #d32f2f;
+    color: #fff;
+  }
+  
+  .pagination-btn.active {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+    color: #fff;
+  }
+  
